@@ -1,17 +1,36 @@
-/*
-Cena de cumpleaños entre amigos
+const estiloTitulo =
+  "background-color:green; font-size:18px; font-weight: bold;";
+const popRock = "🎵 Pop Rock";
+const rock = "🎸 Rock";
+const hardRock = "🤘 Hard Rock";
+const clasica = "🎼 clasica";
 
-Tienes un grupo de 6 amigos y quieres invitarlos a cenar por tu cumpleaños.
+console.log("%cThe Beatles", estiloTitulo);
+console.log("John Lenon");
+console.log(1960);
+console.log("Activo: " + true);
+console.log(`${popRock}`);
 
--Solo puedes permitirte invitar a las bebidas, ya que estás un poco ajustado de dinero.
+console.log("%cQueen", estiloTitulo);
+console.log("Freddie Mercury");
+console.log(1970);
+console.log("Activo: " + false);
+console.log(`${rock}`);
 
--Tienes un ticket de cena que cuesta 120 € y en el que ya se incluyen las bebidas por un valor de 18 €.
+console.log("%cAC DC", estiloTitulo);
+console.log("Brian Johnson");
+console.log(1973);
+console.log("Activo: " + true);
+console.log(`${hardRock}`);
 
--Calcula cuánto tendría que pagar cada comensal para dividir los costos de manera equitativa.
+console.log("%cLudwig van Beethoven", estiloTitulo);
+console.log("Ludwig van Beethoven");
+console.log(1770);
+console.log("Activo: " + false);
+console.log(`${clasica}`);
 
--Utiliza JavaScript para hacer el cálculo y mostrar el resultado por consola.
-*/
-
-console.log((120 - 18) / 6);
-
-/*Bootcamp JS 2 - Laboratorio Módulo 2 - Tipos de datos y Operadores*/
+console.log("%cThe Rolling Stones", estiloTitulo);
+console.log("Mick Jagger");
+console.log(1962);
+console.log("Activo: " + false);
+console.log(`${rock}`);
