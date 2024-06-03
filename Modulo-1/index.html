@@ -2,14 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Tarea HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
+    <nav class="navbar">
+      <img class="nav nav-burguer" src="img/icon-menu-burguer.svg" alt="menu" />
+      <a href="#" class="moda moda-mujer">MODA MUJER</a>
+      <a href="#" class="moda moda-hombre">MODA HOMBRE</a>
+      <a href="#" class="moda moda-coleccion">NUEVA COLECCIÓN</a>
+      <a href="#" class="moda moda-especiales">COLECCIONES ESPECIALES</a>
+      <img class="nav nav-user" src="img/icon-user.svg" alt="user" />
+      <img class="nav nav-heart" src="img/icon-heart.svg" alt="heart" />
+      <img
+        class="nav nav-shopping"
+        src="img/icon-shopping-cart.svg"
+        alt="shopping"
+      />
+    </nav>
+    <div class="header">
+      <h1 class="h1">NUEVAS COLECCIONES</h1>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    +
+    <div class="container">
+      <div class="product-card card1" oncontextmenu="return false">
+        <img src="img/image-3.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Vestido</h2>
+          <span class="product-price">34.99 €</span>
+        </div>
+      </div>
+      <div class="product-card card2" oncontextmenu="return false">
+        <img src="img/image-6.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Camisa</h2>
+          <span class="product-price">44.99 €</span>
+        </div>
+      </div>
+      <div class="product-card card3" oncontextmenu="return false">
+        <img src="img/image-4.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Vaqueros</h2>
+          <span class="product-price">79.99 €</span>
+        </div>
+      </div>
+      <div class="product-card card4" oncontextmenu="return false">
+        <img src="img/image-5.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Polo</h2>
+          <span class="product-price">44.95 €</span>
+        </div>
+      </div>
+      <div class="product-card card5" oncontextmenu="return false">
+        <img src="img/image-1.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Camisa</h2>
+          <span class="product-price">25.00 €</span>
+        </div>
+      </div>
+      <div class="product-card card6" oncontextmenu="return false">
+        <img src="img/image-2.jpg" alt="Imagen modelo" class="product-img" />
+        <div class="card-text">
+          <h2 class="product-title">Camiseta</h2>
+          <span class="product-price">22.99 €</span>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="entrega">
+        <div class="img">
+          <img class="img-svg" src="img/icon-truck.svg" alt="entrega" />
+        </div>
+        <p class="entrega-text">Entrega</p>
+      </div>
+      <div class="devoluciones">
+        <p class="devoluciones-text">Devoluciones y cambios</p>
+      </div>
+      <div class="telefono">
+        <div class="img">
+          <img class="img-svg" src="img/icon-phone.svg" alt="telefono" />
+        </div>
+        <p class="telefono-text">+375 (29) 749-18-23</p>
+      </div>
+      <div class="email">
+        <div class="img">
+          <img class="img-svg" src="img/icon-mail.svg" alt="entrega" />
+        </div>
+        <p class="email-text">shop@omix.com</p>
+      </div>
+    </footer>
   </body>
 </html>
