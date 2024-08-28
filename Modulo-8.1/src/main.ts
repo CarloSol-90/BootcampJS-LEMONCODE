@@ -74,70 +74,100 @@ const pacientes: Pacientes[] = [
   },
 ];
 
-//✅ APARTADO 1 - Queremos extraer la lista de paciente que están asignados a la especialidad de Pediatría
+//!✔️ APARTADO A - Queremos extraer la lista de paciente que están asignados a la especialidad de Pediatría
 
 const obtenPacientesAsignadosAPediatria = (
-  pacientes: Pacientes[] //Tipo de dato que espera un array de tipo Pacientes
+  pacientes: Pacientes[]
 ): Pacientes[] => {
-  //Usamos el metodo filter para crear un nuevo array con los pacientes que cumplen la condición
-  return pacientes.filter(
-    (pacientes: Pacientes) => pacientes.especialidad === "Pediatra"
-    //La condición es que la propiedad "especialidad" del paciente sea igual a "pediatra"
-  );
-};
-console.log(obtenPacientesAsignadosAPediatria(pacientes));
+  //Tu implementación aquí;
+  const pacientesPediatria: Pacientes[] = []; // Array para almacenar los pacientes solicitados de pediatría
 
-//✅ APARTADO 1 - Queremos extraer la lista de pacientes asignados a Pediatría y que tengan una edad menor de 10 años.
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra") {
+      pacientesPediatria.push(pacientes[i]); // Añadir el paciente al array si cumple la condición
+    }
+  }
+
+  return pacientesPediatria; //Devolvemos el array con los pacientes solicitados
+};
+
+//Llamamos a la función y visualizamos el resultado
+const pacientesPediatria = obtenPacientesAsignadosAPediatria(pacientes);
+console.log(pacientesPediatria);
+
+//!✔️ APARTADO B - Queremos extraer la lista de pacientes asignados a Pediatría y que tengan una edad menor de 10 años.
 
 const obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios = (
   pacientes: Pacientes[]
 ): Pacientes[] => {
-  return pacientes.filter(
-    (pacientes: Pacientes) =>
-      pacientes.especialidad === "Pediatra" && pacientes.edad < 10
-    // La condición es que la propiedad 'especialidad' sea "Pediatra" y además la propiedad 'edad' sea menor que 10 años
-  );
-};
-console.log(obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios(pacientes));
+  // Tu implementación aquí :)
+  const pacientesPediatriaMenor: Pacientes[] = [];
 
-//✅ APARTADO 2 - Queremos activar el protocolo de urgencia si cualquier de los pacientes tiene un ritmo cardíaco superior a 100 pulsaciones por minuto y una temperatura corporal superior a 39 grados.
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra" && pacientes[i].edad < 10) {
+      pacientesPediatriaMenor.push(pacientes[i]);
+    }
+  }
+
+  return pacientesPediatriaMenor;
+};
+
+const filtrarMenorPediatria =
+  obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios(pacientes);
+console.log(filtrarMenorPediatria);
+
+//!✔️APARTADO 2 - Queremos activar el protocolo de urgencia si cualquier de los pacientes tiene un ritmo cardíaco superior a 100 pulsaciones por minuto y una temperatura corporal superior a 39 grados.
 
 const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
-  //Usamos el metodo some para compribar si al menos un paciente cumple la condición
-  let activarProctolo = pacientes.some(
-    (pacientes: Pacientes) =>
-      pacientes.frecuenciaCardiaca > 100 && pacientes.temperatura > 39
-    // La condición es que la propiedad 'frecuenciaCardiaca' sea mayor que 100 y 'temperatura' sea mayor que 39
-  );
-  return activarProctolo;
-  //Devolvemos el resultado true o false dependiendo de si cumple la función
-};
-console.log(activarProtocoloUrgencia(pacientes));
+  let activarProctolo = false;
 
-//✅ APARTADO 3 - El pediatra no puede atender hoy a los pacientes, queremos reasignar los pacientes asignados a la especialidad de pediatría a la de medico de familia.
-
-const reasignaPacientesAMedicoFamilia = (
-  pacientes: Pacientes[]
-): Pacientes[] => {
-  // Usamos el método map para crear un nuevo array transformando cada elemento
-  const pacientesTransformados: Pacientes[] = pacientes.map(
-    (pacientes: Pacientes) => {
-      if (pacientes.especialidad === "Pediatra") {
-        // Si la especialidad del paciente es "Pediatra", la cambiamos a "Medico de familia"
-        return { ...pacientes, especialidad: "Medico de familia" };
-      }
-      return pacientes; // Si no es "Pediatra", devolvemos el paciente sin cambios
+  for (let i = 0; i < pacientes.length; i++) {
+    if (
+      pacientes[i].frecuenciaCardiaca > 100 &&
+      pacientes[i].temperatura > 39
+    ) {
+      activarProctolo = true;
+      break; // Salimos del bucle una vez que revisa todos los pacientes
+    } else {
+      console.log("Pacientes con protocolo de urgencia: ", activarProctolo);
     }
-  );
-  return pacientesTransformados; // Devolvemos el array transformado
-};
-//Imprimimos por consola el resultado de la funcón, pasandole como argumento el array de paciente
-console.log(reasignaPacientesAMedicoFamilia(pacientes));
+  }
 
-//✅ APARTADO 4 - Queremos saber si podemos mandar al Pediatra a casa (si no tiene pacientes asignados), comprobar si en la lista hay algún paciente asignado a pediatría
+  return activarProctolo;
+};
+
+//Llamada a la funcion
+const protocoloActivado = activarProtocoloUrgencia(pacientes);
+
+//!✔️ APARTADO 3 - El pediatra no puede atender hoy a los pacientes, queremos reasignar los pacientes asignados a la especialidad de pediatría a la de medico de familia.
+
+const reasignaPacientesAMedicoFamilia = (pacientes: Pacientes[]): void => {
+  // Tu implementación aquí :)
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra") {
+      pacientes[i].especialidad = "Medico de familia"; //Reasignar la especialidad
+    }
+  }
+};
+
+//llamamos a la funcion para reasignar a los pacientes
+reasignaPacientesAMedicoFamilia(pacientes);
+
+//Mostramos por consola para verificar la reasignación
+console.log(pacientes);
+
+//!✔️ APARTADO 4 - Queremos saber si podemos mandar al Pediatra a casa (si no tiene pacientes asignados), comprobar si en la lista hay algún paciente asignado a pediatría
 
 const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
-  return pacientes.some((paciente) => paciente.especialidad === "Pediatra");
-  // Usamos el método some para verificar si existe al menos un paciente cuya especialidad sea "Pediatra"
+  // Tu implementación aquí :)
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra") {
+      return false; // Si hay un paciente asignado a Pediatría, no puede irse
+    }
+  }
+  return true; // Si no se encuentra ningún paciente asignado a Pediatría, puede irse
 };
-console.log(HayPacientesDePediatria(pacientes));
+
+//Llamamos a la funcion y mostramos el resultado por consola para su comprobación.
+const puedeIrseACasa = HayPacientesDePediatria(pacientes);
+console.log(puedeIrseACasa);
