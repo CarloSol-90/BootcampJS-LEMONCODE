@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  background-color: #b9e9fc;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #f8c667;
+}
+
+p {
+  font-size: 2rem;
+  color: #f69052;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3 1fr);
+  gap: 20px 20px;
+  margin: 16px;
+}
+
+.carta {
+  width: 128px;
+  height: 128px;
+  border-radius: 10px;
+  background-color: #f8c667;
+}
+
+.carta:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 21px #f69052;
+}
