@@ -64,9 +64,12 @@ p {
   position: absolute;
   width: 120px;
   height: 120px;
-  backface-visibility: hidden;
 }
 
 .carta img {
   transform: rotateY(180deg);
+}
+
+.hidden {
+  display: none;
 }
