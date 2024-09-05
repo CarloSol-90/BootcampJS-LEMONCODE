@@ -51,9 +51,7 @@ p {
 .carta:hover {
   cursor: pointer;
   box-shadow: 2px 2px 21px #f69052;
-  /*
-  transform: scale(1.1);.
-  */
+  transform: scale(1.1);
 }
 
 .contenedor.voltear .carta img {
@@ -66,4 +64,29 @@ p {
 
 .hidden {
   display: none;
+}
+
+#botonIniciarPartida {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #f69052;
+  color: #b9e9fc;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  border: 3px solid #f8c667;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+  box-shadow: 10px;
+  -webkit-box-shadow: 0px 12px 18px 1px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 12px 18px 1px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 12px 18px 1px rgba(0, 0, 0, 0.71);
+}
+
+#botonIniciarPartida:hover {
+  transform: scale(0.9);
+  -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.71);
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.71);
 }
