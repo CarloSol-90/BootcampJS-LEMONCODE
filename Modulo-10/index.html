@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Asincronia</title>
+  <link rel="stylesheet" href="/src/10-asicronía/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Personajes de Mortadelo y Filemón</h1>
+    
+    <div class="filtro-container">
+      <input type="text" id="filtro-input" placeholder="Buscar personaje...">
+      <button id="filtrar-btn">Filtrar</button>
+      <button id="limpiar-btn">Mostrar Todos</button>
+    </div>
+    
+    <div id="loading" class="loading hidden">Cargando...</div>
+    
+    <div id="personajes-container" class="personajes-grid">
+      <!-- Aquí se mostrarán los personajes -->
+    </div>
+  </div>
+
+  <script type="module" src="/src/10-asicronía/main.ts"></script>
+</body>
+</html>
