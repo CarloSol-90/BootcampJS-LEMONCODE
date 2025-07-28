@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicio A - Validador IBAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Ejercicio A - Validador IBAN Español</h1>
+    
+    <div class="input-container">
+      <h2>Introduce un IBAN español para validar:</h2>
+      <label for="iban-input">IBAN:</label>
+      <input type="text" id="iban-input" placeholder="ES21 1465 0100 72 2030876293" maxlength="29">
+      <button id="validar-iban-btn">Validar y Analizar</button>
+    </div>
+    
+    <div id="iban-resultado" class="resultado empty">
+      Introduce un IBAN para empezar...
+    </div>
+
+    <div class="ejemplos">
+      <h3>Ejemplos para probar:</h3>
+      <p><strong>Válido:</strong> ES21 1465 0100 72 2030876293</p>
+      <p><strong>Válido sin espacios:</strong> ES2114650100722030876293</p>
+      <p><strong>Válido con guiones:</strong> ES21-1465-0100-72-2030876293</p>
+      <p><strong>Inválido:</strong> ES123456789</p>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

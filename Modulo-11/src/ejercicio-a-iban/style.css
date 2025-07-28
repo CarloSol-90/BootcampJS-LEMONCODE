@@ -1,0 +1,138 @@
+/* CSS súper básico para Ejercicio A - IBAN */
+body {
+  font-family: Arial;
+  margin: 20px;
+  background-color: white;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  background: lightblue;
+}
+
+h2 {
+  color: black;
+  text-decoration: underline;
+}
+
+h3 {
+  color: black;
+  margin-top: 20px;
+}
+
+/* Formulario */
+.input-container {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: lightyellow;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  margin: 5px 0 15px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background: lightgreen;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: green;
+  color: white;
+}
+
+/* Resultados */
+.resultado {
+  border: 2px solid black;
+  padding: 15px;
+  margin: 15px 0;
+  min-height: 50px;
+}
+
+.resultado.empty {
+  color: gray;
+  text-align: center;
+  font-style: italic;
+}
+
+/* IBAN válido */
+.iban-info {
+  background: lightgreen;
+  border: 2px solid green;
+  padding: 15px;
+}
+
+.iban-info h3 {
+  color: green;
+  margin-top: 0;
+}
+
+/* IBAN error */
+.iban-error {
+  background: pink;
+  border: 2px solid red;
+  padding: 15px;
+}
+
+.iban-error h3 {
+  color: red;
+  margin-top: 0;
+}
+
+/* Detalles del IBAN */
+.iban-details {
+  margin-top: 15px;
+}
+
+.iban-detail {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 8px 0;
+  background: white;
+}
+
+.iban-detail h4 {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  color: blue;
+}
+
+.iban-detail p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Ejemplos */
+.ejemplos {
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  background: lightgray;
+}
+
+.ejemplos p {
+  margin: 5px 0;
+}

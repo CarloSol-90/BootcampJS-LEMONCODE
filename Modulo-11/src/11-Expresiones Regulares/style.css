@@ -1,0 +1,158 @@
+/* CSS súper básico - estilo años 90 */
+body {
+  font-family: Arial;
+  margin: 20px;
+  background-color: white;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+h2 {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Navegación súper simple */
+.navigation {
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  padding: 5px 15px;
+  margin-right: 10px;
+  background: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  background: gray;
+  color: white;
+}
+
+/* Ocultar/mostrar secciones */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Formularios básicos */
+.input-container {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 5px 0;
+}
+
+textarea {
+  height: 100px;
+  font-family: monospace;
+}
+
+button {
+  padding: 8px 12px;
+  background: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background: blue;
+  color: white;
+}
+
+/* Resultados */
+.resultado {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.resultado.empty {
+  color: gray;
+  text-align: center;
+}
+
+/* IBAN */
+.iban-info {
+  background: lightgreen;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.iban-error {
+  background: pink;
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.iban-details {
+  margin-top: 10px;
+}
+
+.iban-detail {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px 0;
+  background: lightyellow;
+}
+
+.iban-detail h4 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.iban-detail p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Imágenes */
+.image-item {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.image-preview {
+  width: 100px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.image-url {
+  font-family: monospace;
+  font-size: 10px;
+  background: lightgray;
+  padding: 3px;
+}
+
+.images-count {
+  background: lightblue;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+}

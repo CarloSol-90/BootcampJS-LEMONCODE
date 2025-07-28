@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicio B - Extractor de Imágenes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Ejercicio B - Extractor de Imágenes HTML</h1>
+    
+    <div class="input-container">
+      <h2>Pega código HTML para extraer imágenes:</h2>
+      <label for="html-textarea">HTML:</label>
+      <textarea id="html-textarea" placeholder="<img src='imagen.jpg' alt='descripción' />" rows="8"></textarea>
+      <button id="extraer-btn">Extraer Enlaces de Imágenes</button>
+      <button id="ejemplo-btn">Cargar Ejemplo</button>
+    </div>
+    
+    <div id="imagenes-resultado" class="resultado empty">
+      Pega HTML para extraer imágenes...
+    </div>
+
+    <div class="info">
+      <h3>¿Qué hace este ejercicio?</h3>
+      <p>Busca todos los tags &lt;img&gt; en el HTML y extrae:</p>
+      <ul>
+        <li><strong>src:</strong> La URL de la imagen</li>
+        <li><strong>alt:</strong> Texto alternativo (si existe)</li>
+        <li><strong>title:</strong> Título de la imagen (si existe)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

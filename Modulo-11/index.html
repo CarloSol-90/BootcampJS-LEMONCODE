@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Laboratorio Módulo 11 - Expresiones Regulares</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      background-color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      border: 2px solid black;
+      padding: 15px;
+      background: lightsteelblue;
+    }
+
+    .ejercicio {
+      border: 2px solid black;
+      padding: 20px;
+      margin: 20px 0;
+      background: lightyellow;
+    }
+
+    .ejercicio h2 {
+      margin-top: 0;
+      color: black;
+      text-decoration: underline;
+    }
+
+    .ejercicio p {
+      margin: 10px 0;
+      line-height: 1.4;
+    }
+
+    .ejercicio a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: lightgreen;
+      color: black;
+      text-decoration: none;
+      border: 2px solid black;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .ejercicio a:hover {
+      background: green;
+      color: white;
+    }
+
+    .info {
+      border: 1px solid black;
+      padding: 15px;
+      margin: 20px 0;
+      background: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Laboratorio Módulo 11<br>Expresiones Regulares</h1>
+    
+    <div class="info">
+      <p>Este laboratorio contiene dos ejercicios independientes para practicar expresiones regulares:</p>
+      <ul>
+        <li><strong>Ejercicio A:</strong> Validador de códigos IBAN españoles</li>
+        <li><strong>Ejercicio B:</strong> Extractor de enlaces de imágenes desde HTML</li>
+      </ul>
+      <p>Cada ejercicio está en su propia carpeta con sus archivo independientes.</p>
+    </div>
+
+    <div class="ejercicio">
+      <h2>Ejercicio A - Validador IBAN</h2>
+      <p><strong>Objetivo:</strong> Validar y analizar códigos IBAN españoles usando expresiones regulares.</p>
+      <p><strong>Funcionalidades:</strong></p>
+      <ul>
+        <li>Validar formato de IBAN (con espacios, guiones, o sin separadores)</li>
+        <li>Extraer información: país, banco, sucursal, cuenta, etc.</li>
+        <li>Identificar el nombre del banco</li>
+        <li>Mostrar todos los componentes del IBAN</li>
+      </ul>
+      <a href="src/ejercicio-a-iban/index.html">🚀 Abrir Ejercicio A</a>
+    </div>
+
+    <div class="ejercicio">
+      <h2>Ejercicio B - Extractor de Imágenes</h2>
+      <p><strong>Objetivo:</strong> Extraer enlaces de imágenes desde contenido HTML usando expresiones regulares.</p>
+      <p><strong>Funcionalidades:</strong></p>
+      <ul>
+        <li>Buscar todos los tags &lt;img&gt; en HTML</li>
+        <li>Extraer atributos: src, alt, title</li>
+        <li>Mostrar vista previa de las imágenes</li>
+        <li>Validar URLs de imagen</li>
+      </ul>
+      <a href="src/ejercicio-b-imagenes/index.html">🚀 Abrir Ejercicio B</a>
+    </div>
+  </div>
+</body>
+</html>
