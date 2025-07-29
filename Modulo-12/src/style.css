@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.titulo {
+  text-align: center;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  margin: 0;
+  padding: 30px;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  padding: 30px;
+}
+
+h2 {
+  color: #4a90e2;
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #357abd;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.reservas-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border-left: 5px solid #4a90e2;
+}
+
+.reservas-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reservas-info li {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #28a745;
+}
+
+.reservas-info li strong {
+  color: #357abd;
+}
+
+.resultados {
+  background: #e8f5e8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border-left: 5px solid #28a745;
+}
+
+.resultado {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resultado.subtotal {
+  border-left: 4px solid #ffc107;
+  color: #856404;
+}
+
+.resultado.total {
+  border-left: 4px solid #28a745;
+  color: #155724;
+  font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .titulo {
+    font-size: 2em;
+    padding: 20px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+}

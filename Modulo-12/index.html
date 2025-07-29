@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio Módulo 12 - Clases</title>
+  </head>
+  <body>
+    <div id="app">
+      <div><h1 class="titulo">Sistema de Reservas de Hotel</h1></div>
+      
+      <div class="container">
+        <h2>Cliente Particular</h2>
+        <div class="reservas-info">
+          <h3>Reservas del cliente:</h3>
+          <ul id="reservas-lista"></ul>
+        </div>
+        
+        <div class="resultados">
+          <h3>Cálculo Cliente Particular:</h3>
+          <div id="particular-subtotal" class="resultado"></div>
+          <div id="particular-total" class="resultado"></div>
+        </div>
+
+        <h2>Tour Operador</h2>
+        <div class="resultados">
+          <h3>Cálculo Tour Operador:</h3>
+          <div id="touroperador-subtotal" class="resultado"></div>
+          <div id="touroperador-total" class="resultado"></div>
+        </div>
+
+        <h2>Con Desayuno Incluido</h2>
+        <div class="reservas-info">
+          <h3>Reservas con desayuno:</h3>
+          <ul id="reservas-desayuno-lista"></ul>
+        </div>
+        
+        <div class="resultados">
+          <h3>Cliente Particular (con desayuno):</h3>
+          <div id="particular-desayuno-subtotal" class="resultado"></div>
+          <div id="particular-desayuno-total" class="resultado"></div>
+        </div>
+
+        <div class="resultados">
+          <h3>Tour Operador (con desayuno):</h3>
+          <div id="touroperador-desayuno-subtotal" class="resultado"></div>
+          <div id="touroperador-desayuno-total" class="resultado"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
