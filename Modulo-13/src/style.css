@@ -368,3 +368,84 @@ body {
     padding: 2rem;
   }
 }
+
+/* Account Cards */
+.accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.account-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.account-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.account-card h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.account-type {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.account-iban {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.account-card .account-balance {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.account-card .balance-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.account-card .balance-amount {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+/* Back button */
+.back-button {
+  background: none;
+  border: none;
+  color: #00bcd4;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Movement, Account } from "./api-model";
 
-const baseURL = import.meta.env.VITE_BASE_API_URL || "http://localhost:3000/api";
+const baseURL = import.meta.env.VITE_BASE_API_URL || "http://localhost:3002/api";
 
 const apiClient = axios.create({
   baseURL,
