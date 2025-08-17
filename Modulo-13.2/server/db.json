@@ -9,7 +9,7 @@
       "lastTransaction": "2019-12-09T21:30:00.000Z"
     },
     {
-      "id": "2", 
+      "id": "2",
       "iban": "ES79 2100 0813 6101 2345 6789",
       "type": "3",
       "name": "Compartida",
@@ -18,17 +18,24 @@
     },
     {
       "id": "3",
-      "iban": "ES12 2100 0813 1234 5678 9012", 
+      "iban": "ES12 2100 0813 1234 5678 9012",
       "type": "2",
       "name": "Ahorro",
       "balance": 15000,
       "lastTransaction": "2019-12-08T10:15:00.000Z"
+    },
+    {
+      "type": "cuenta corriente",
+      "name": "hol",
+      "id": "1755449923048",
+      "balance": 0,
+      "lastTransaction": "2025-08-17T16:58:43.048Z"
     }
   ],
   "movements": [
     {
       "id": "1",
-      "accountId": "1", 
+      "accountId": "1",
       "transaction": "2019-12-09T21:30:00.000Z",
       "realTransaction": "2019-12-09T21:30:00.000Z",
       "description": "Nómina noviembre",
@@ -38,7 +45,7 @@
     {
       "id": "2",
       "accountId": "1",
-      "transaction": "2019-12-07T14:20:00.000Z", 
+      "transaction": "2019-12-07T14:20:00.000Z",
       "realTransaction": "2019-12-08T14:20:00.000Z",
       "description": "Alquiler noviembre",
       "amount": -400,
@@ -48,7 +55,7 @@
       "id": "3",
       "accountId": "1",
       "transaction": "2019-12-01T09:15:00.000Z",
-      "realTransaction": "2019-12-02T09:15:00.000Z", 
+      "realTransaction": "2019-12-02T09:15:00.000Z",
       "description": "Gastos móvil",
       "amount": -24,
       "balance": 990
