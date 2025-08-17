@@ -23,7 +23,9 @@ npm start
 npm run dev:client
 ```
 
-Acceder a: http://localhost:8080
+Acceder a: http://localhost:8082
+
+**Nota**: Si el puerto 8082 está ocupado, Vite automáticamente asignará el siguiente puerto disponible (ej: 8083, 8084, etc.)
 
 ## Credenciales
 
@@ -33,9 +35,17 @@ Acceder a: http://localhost:8080
 ## Funcionalidades
 
 - Login de usuario
+- Listado de cuentas bancarias
+- Agregar nueva cuenta
 - Listado de movimientos de cuenta
 - Navegación entre secciones
 - Diseño responsive
+
+## Puertos de Desarrollo
+
+- **Cliente React**: Puerto 8082 (auto-asignado si está ocupado)
+- **Servidor JSON**: Puerto 3005
+- **Nota**: Configurado para evitar conflictos con Módulo 13
 
 ## Tecnologías
 
