@@ -4,7 +4,7 @@
   "description": "JSON Server for Banca Online",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000 --routes routes.json --middlewares ./account.middleware.js"
+    "start": "json-server --watch db.json --port 3005 --routes routes.json --middlewares ./account.middleware.js"
   },
   "dependencies": {
     "json-server": "^0.17.1"

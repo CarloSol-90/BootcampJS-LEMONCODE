@@ -23,13 +23,6 @@
       "name": "Ahorro",
       "balance": 15000,
       "lastTransaction": "2019-12-08T10:15:00.000Z"
-    },
-    {
-      "type": "cuenta corriente",
-      "name": "hol",
-      "id": "1755449923048",
-      "balance": 0,
-      "lastTransaction": "2025-08-17T16:58:43.048Z"
     }
   ],
   "movements": [
